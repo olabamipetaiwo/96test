@@ -1054,6 +1054,34 @@ html.transition *:after {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 50em) {
+  .pricing__content__item__side {
+    height: auto;
+    position: relative;
+    border-radius: 0;
+    padding-bottom: 5rem;
+  }
+  .pricing__content__item__side--front {
+    background-color: red;
+    background-color: var(--white);
+  }
+  .pricing__content__item__side--back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    padding-top: 10rem;
+    -webkit-transform: translateY(-10rem);
+            transform: translateY(-10rem);
+  }
+  .pricing__content__item:hover .pricing__content__item__side--front {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
 .pricing__content__item__details {
   padding: 3rem;
 }

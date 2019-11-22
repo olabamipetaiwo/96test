@@ -224,6 +224,35 @@
                 }
             }
 
+            
+            @include respond(misc1) {
+                &__side {
+                    height:auto; 
+                    position:relative;
+                    border-radius:0;
+                    padding-bottom:5rem;
+    
+                    &--front {
+                        background-color:red;
+                        background-color:var(--white);
+                    }
+    
+                    &--back {
+                        transform:rotateY(0); 
+                        border-bottom-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                         -webkit-clip-path:polygon(0 20%, 100% 0,100% 100%,0 100%);
+                         clip-path:polygon(0 20%, 100% 0,100% 100%,0 100%);
+                         padding-top:10rem;
+                         transform:translateY(-10rem);                   
+                    }
+                }
+
+                &:hover &__side--front {
+                    transform:rotateY(0);
+                } 
+    
+            }
 
             &__details {
                 padding:3rem;
