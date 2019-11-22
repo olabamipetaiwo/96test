@@ -1,0 +1,15 @@
+.video {
+    height:50vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-color:  var(--lighter-shade);
+    margin-left:7rem;
+    margin-right:7rem;
+   
+    video {
+        width:50%;
+        height:100%;
+    }
+}

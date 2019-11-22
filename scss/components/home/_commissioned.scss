@@ -1,0 +1,106 @@
+.commissioned {
+    background-color: var(--commissioned);
+    margin-left:7rem;
+    margin-right:7rem;
+    min-height:30rem;
+
+    &__heading {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+  
+        h4 {
+          color:var(--white);
+          padding-top:1.5rem;
+          font-size:3.5rem;
+        }
+    }
+
+    &__content {
+        margin-left:auto;
+        margin-right:auto;
+        width: 80%;
+
+        display:flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+
+
+        &__item {
+                    flex-basis:33.3%;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    height:40rem;
+                    display:flex;
+                    flex-direction:column;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include respond(misc1) {
+                       flex-basis:100%;
+                       padding-bottom:2rem;
+                    }
+
+                    
+
+                    &:not(:last-child) {
+                        border-right:1px solid var(--white);
+                        
+                        @include respond(misc1) {
+                            border-right:none;
+                            border-bottom:1px solid var(--white);
+                        }
+                    }
+
+                
+
+                    figure {
+                                    margin-top: 3rem;
+                                    margin-bottom: 3rem;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    width:70%;
+                                    display:flex;
+                                    flex-direction:column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height:34rem;
+                    
+                                    img {
+                                        height:100%;
+                                        width:100%;
+                                        object-fit:cover;
+                                    }
+                    }
+
+                    h5 {
+                                    color:var(--white);
+                                    padding-top:1.5rem;
+                                    font-size:2rem;
+                                    text-align:center;
+                                }
+                    
+                                &-link {
+                                    &:link,
+                                    &:visited {
+                                      color:var(--white);
+                                      background-color:transparent;
+                                      text-decoration: none;
+                                      transition:all .2s;
+                                      border:.1rem solid var(--white);
+                                      padding:1rem 2.5rem  1rem 2.5rem;
+                                      margin-top:1.2rem;
+                                      font-size:1.5rem;
+                                    }
+                    
+                                    &:hover,
+                                    &:active {
+                                        color:var(--black);
+                                        background-color:white;
+                                    }                
+                                }
+        }
+    }
+}

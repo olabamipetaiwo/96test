@@ -1,0 +1,21 @@
+.btn__transparent {
+    outline:none;
+    border:none;
+    padding:2rem 3rem 2rem 0rem;
+    font-size:1.5rem; 
+    cursor:pointer;
+    &:link,
+    &:visited {
+        text-decoration:none;
+        background-color: none;
+        color:var(--white);
+        font-weight:400;
+        transition:all .2s;
+    }
+
+    &:hover,
+    &:active {
+        font-weight:700;
+    }
+}
+

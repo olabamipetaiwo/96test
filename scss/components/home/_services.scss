@@ -1,0 +1,76 @@
+.services {
+    display:flex;
+    min-height:50vh;
+    justify-content:space-between;
+    background-color:var(--lighter-shade);
+    margin-left:7rem;
+    margin-right:7rem;
+
+    @include respond(misc1) {
+      flex-direction:column;
+    }
+
+
+    &__content {
+        flex-basis: 60%;
+        flex-shrink:0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(misc1) {
+            flex-basis: 100%;
+            padding-top:2rem;
+            padding-bottom:2rem;
+        }
+
+        h4 {
+            color:var(--white);
+            font-size:2.5rem
+        }
+
+        ul {
+            list-style:none;
+            font-size:1.5rem;
+            font-weight:700;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            
+            li {
+                padding:.7rem;
+                color:var(--white);
+            }
+        }
+    }
+
+    &__image {
+        flex-basis: auto;
+
+        @include respond(misc1) {
+            flex-basis: 100%;
+        }
+
+        figure {
+            height:70vh;
+
+            
+            @include respond(misc1) {
+               height:40vh;
+            }
+            
+            img {
+                height:100%;
+
+                @include respond(misc1) {
+                  width:100%;
+                //   object-fit:cover;
+                object-fit: contain;
+                padding-bottom:2rem;
+                }
+            }
+        }
+    }
+}

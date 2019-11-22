@@ -1,0 +1,38 @@
+@import "abstracts/animations";
+@import "abstracts/typography";
+@import "abstracts/utilities";
+@import "abstracts/mixins";
+
+@import "base/base";
+
+@import "components/loader";
+@import "components/checkbox";
+@import "components/buttonlink";
+
+
+//Home
+@import "components/home/slider";
+@import "components/home/services";
+@import "components/home/commissioned";
+@import "components/home/video";
+@import "components/home/pricing";
+@import "components/home/testimonials";
+@import "components/home/location";
+@import "components/contact";
+@import "components/portfolio/category";
+@import "components/portfolio/commision";
+
+
+@import "components/about/introduction";
+
+
+@import "layouts/navigation";
+@import "layouts/footer";
+@import "layouts/portfolio";
+@import "layouts/header";
+
+
+@import "pages/home";
+
+
+
