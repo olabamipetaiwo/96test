@@ -227,16 +227,13 @@
             
             @include respond(misc1) {
                 height:80rem;
+                margin-bottom:5rem;
 
                 &__side {
                     height:auto; 
                     position:relative;
                     border-radius:0;
                     padding-bottom:5rem;
-    
-                    // &--front {
-                    //     background-color:var(--white);
-                    // }
     
                     &--back {
                         transform:rotateY(0); 
