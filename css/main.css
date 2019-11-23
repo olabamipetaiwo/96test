@@ -1055,15 +1055,14 @@ html.transition *:after {
 }
 
 @media only screen and (max-width: 50em) {
+  .pricing__content__item {
+    height: 80rem;
+  }
   .pricing__content__item__side {
     height: auto;
     position: relative;
     border-radius: 0;
     padding-bottom: 5rem;
-  }
-  .pricing__content__item__side--front {
-    background-color: red;
-    background-color: var(--white);
   }
   .pricing__content__item__side--back {
     -webkit-transform: rotateY(0);
@@ -1075,6 +1074,19 @@ html.transition *:after {
     padding-top: 10rem;
     -webkit-transform: translateY(-10rem);
             transform: translateY(-10rem);
+    margin-top: 2rem;
+  }
+  .pricing__content__item__side--back-1 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#ff7730), to(#ffb988));
+    background-image: linear-gradient(to right bottom, #ff7730, #ffb988);
+  }
+  .pricing__content__item__side--back-2 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#5643fa), to(#2998ff));
+    background-image: linear-gradient(to right bottom, #5643fa, #2998ff);
+  }
+  .pricing__content__item__side--back-3 {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#28b485), to(#7ed56f));
+    background-image: linear-gradient(to right bottom, #28b485, #7ed56f);
   }
   .pricing__content__item:hover .pricing__content__item__side--front {
     -webkit-transform: rotateY(0);
