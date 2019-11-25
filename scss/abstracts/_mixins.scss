@@ -1,11 +1,11 @@
 @mixin categoryContainer {
     margin-left:7rem;
     margin-right:7rem;
-     min-height:50vh;
+    min-height:90vh;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
-   
+    padding-bottom:3rem;
 }
 
 @mixin flexCenter {
@@ -32,6 +32,7 @@
 // 1em =16px; root font-size
 
 // -misc1 800
+
 
 @mixin  respond($breakpoint) {
   @if$breakpoint == xm-phone {

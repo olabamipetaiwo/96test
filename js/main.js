@@ -1,25 +1,33 @@
 $(document).ready(() => {
-    // var checkbox = document.getElementById('switch');
+    var checkbox = document.getElementById('switch');
+    var logo = sessionStorage.getItem('logo');
+    if(logo) {
+        document.getElementById('logo').setAttribute('src',logo);
+    }
 
-    // checkbox.addEventListener('change', () => {
-    //     var currentTheme = document.documentElement.getAttribute('data-theme');
-    //     if (currentTheme === 'light') {
-    //         trans();
-    //         localStorage.setItem('currentTheme',"dark");
-    //         document.documentElement.setAttribute('data-theme','dark');
-    //     }else {
-    //         trans();      
-    //         localStorage.setItem('currentTheme',"light");
-    //         document.documentElement.setAttribute('data-theme','light');
-    //     }
-    // });
+    checkbox.addEventListener('change', () => {
+        var currentTheme = document.documentElement.getAttribute('data-theme');
+        if (currentTheme === 'light') {
+            trans();
+            sessionStorage.setItem('logo','images/69.png');
+            document.getElementById('logo').setAttribute('src','images/69.png');
+            sessionStorage.setItem('currentTheme',"dark");
+            document.documentElement.setAttribute('data-theme','dark');
+        }else {
+            trans();      
+            sessionStorage.setItem('logo','images/69light.png');
+            document.getElementById('logo').setAttribute('src','images/69light.png');
+            sessionStorage.setItem('currentTheme',"light");
+            document.documentElement.setAttribute('data-theme','light');
+        }
+    });
     
-    // let trans = () => {
-    //     document.documentElement.classList.add('transition');
-    //     window.setTimeout(() => {
-    //         document.documentElement.classList.remove('transition');
-    //     },1000);
-    // } 
+    let trans = () => {
+        document.documentElement.classList.add('transition');
+        window.setTimeout(() => {
+            document.documentElement.classList.remove('transition');
+        },1000);
+    } 
 
 
     $("#button").click(() => {

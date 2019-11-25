@@ -5,6 +5,16 @@ $green_dark: #28b485;
 $blue_light:#2998ff;
 $blue_dark:#5643fa;
 
+$color_primary: #55c57a;
+$color_primary_light:#7ed56f;
+$color_primary_dark: #28b485;
+$color_grey_dark: #777;
+$color_white:  #fff;
+$color_black:rgb(15, 14, 14);
+$color_grey_light_1: #f7f7f7;
+$color_grey_light_2: #999;
+$color_grey_light_3: #333;
+
 
 * {
     margin:0;
@@ -12,28 +22,71 @@ $blue_dark:#5643fa;
     box-sizing:border-box;
 }
 
-:root {
-    --bg:#fff;
-    --text:orangered;
-    --white:#ffffff;   
-    --black:#0f0f10;
+:root {  
     --masonryGutter: 3%;
+
+    --bg:#ffffff;  
+    --text:#ff7730;;
+    --white:#ff7730; 
+    --black:#bbb;
+
+    --hover:#752d06;
+    --pricing:#f7f7f7;
+    --pricing-heading:#f7f7f7;
+    --pricing-list:#25262c;
+    --commissioned-hover:#f7f7f7;
+    --footer:#f7f7f7;
+    --testimonial:#752d06;
+    --testimonial-name::#ff7730;
+    --lighter-shade:#f7f7f7;
+    --pricing-price:#f7f7f7;
+    --category-text:#f7f7f7;
+    --category-bg:#ff7730;
+    --category-border:#ffffff;
+    --input-placeholder:#ff7730;
+    --switch:#ff7730;
+    --other:#ff7730;
+
+    --bg-2:#ff7730; 
+    --text-2:#fff;
+    --dark1:#202f61;
+    --dark2:#29324d;
+    --dark3:#2a3556;
+    --dark4:#1b2440;
 }
 
 
 
 html[data-theme='dark'] {
     --bg:#1b1c22;
-    --bg-2:#ffffff;
     --text:#bbb;
-    --text-2:#3d51fb;
-    --hover:#ffffff;
-    --lighter-shade:#202128;
-    --darker-shade:#191a20;
     --white:#ffffff;   
     --black:#0f0f10;
-    --line:#ffffff;
+
+
+    --hover:#ffffff;
     --commissioned:#25262c;
+    --commissioned-hover:#25262c;
+    --pricing:#25262c;
+    --pricing-heading:#f7f7f7;
+    --pricing-list:#ffffff; 
+    --footer:#25262c;
+    --testimonial:#bbb; 
+    --testimonial-name:#f7f7f7;
+    --lighter-shade:#202128;
+    --pricing-price:#f7f7f7;
+    --category-text:#f7f7f7;
+    --category-border:#f7f7f7;
+    --category-bg:#1b1c22;
+    --input-placeholder:#f7f7f7;
+    --switch:#3d51fb;
+    --other:#3d51fb;
+
+
+    --text-2:#3d51fb;
+    --bg-2:#ffffff;
+    --darker-shade:#191a20;
+    --line:#ffffff;
 }
 
 *,

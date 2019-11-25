@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="images/69.png">
     <link href="fonts/font-awesome.css" rel="stylesheet">
+     <script src="js/theme.js"></script>
     <link rel='stylesheet' href='owl/owl.carousel.min.css'>
     <link rel='stylesheet' href='owl/owl.theme.default.min.css'>
     <link rel="stylesheet" href="baguette/baguetteBox.min.css">
     <!-- <link href='http://fonts.googleapis.com/css?family=Monteserrat 300 400 700 800' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- <script src="js/theme.js"></script> -->
 </head>
     <body>
         <!-- begin of preloader -->
@@ -24,12 +24,19 @@
             <div class="overlay2"></div>
             <div class="overlay"></div>
         <!-- end of preloader -->
+        
+        <!-- Mode Changer -->
+        <div class="checkbox">
+                <input type="checkbox" id="switch" name="theme">
+                <label for="switch"></label>
+          </div>
+        <!-- Mode Changer -->
         <!-- main -->
         <main class="main">
             <!-- navigation bar -->
                 <nav class="main__nav">
                         <figure>
-                            <img src="images/69.png"   alt="69 Views Logo">
+                            <img src="images/69.png"  id="logo"  alt="69 Views Logo">
                         </figure>
                         <button id="button" class="hamburger">
                             <span class="burger"></span>
@@ -298,7 +305,7 @@
                                         </div>
                                         <h4 class="pricing__content__item__heading">
                                             <span class="pricing__content__item__heading-span pricing__content__item__heading-span--2">
-                                                  Standard Plan
+                                                  Deluxe Plan
                                             </span>                                        
                                         </h4>
                                         <div class="pricing__content__item__details">
@@ -330,7 +337,7 @@
                                     </div>
                                     <h4 class="pricing__content__item__heading">
                                         <span class="pricing__content__item__heading-span pricing__content__item__heading-span--3">
-                                              Standard Plan
+                                              Premium Plan
                                         </span>                                        
                                     </h4>
                                     <div class="pricing__content__item__details">

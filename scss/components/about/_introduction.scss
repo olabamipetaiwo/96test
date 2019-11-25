@@ -5,6 +5,13 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    
+    padding-top:2rem;
+
+    @include respond(phone) {
+       flex-direction:column;
+       padding-top:10rem;
+    }
 
     &__content {
         flex-basis:50%;
@@ -47,8 +54,8 @@
         align-items:center;
 
         figure {
-            height:30vw;
-            width:50vh;
+            height:50rem;
+            width:30rem;
           
 
             img {
@@ -61,9 +68,8 @@
         &__location {
             writing-mode:vertical-rl;
             position:absolute;
-            color:blue;
             top:35%;
-            right:7rem;
+            right:2rem;
 
             ul {
                 list-style:none;

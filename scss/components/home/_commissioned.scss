@@ -3,6 +3,7 @@
     margin-left:7rem;
     margin-right:7rem;
     min-height:30rem;
+    padding-bottom:3rem;
 
     &__heading {
         display:flex;
@@ -97,8 +98,9 @@
                     
                                     &:hover,
                                     &:active {
-                                        color:var(--black);
-                                        background-color:white;
+                                        color:var(--commissioned-hover);
+                                        background-color:var(--white);
+                                        font-weight:700;
                                     }                
                                 }
         }

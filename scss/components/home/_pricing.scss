@@ -1,6 +1,6 @@
 .pricing {
     cursor:pointer;
-    background-color: var(--commissioned);
+    background-color: var(--pricing);
     padding-bottom:5rem;
 
     &__heading {
@@ -70,7 +70,7 @@
             
                 &--front {
                     background-color:var(--bg);
-                    color:var(--text);
+                    color:var(--pricing-list);
                 }
 
                 &--back {
@@ -148,8 +148,8 @@
 
               &__heading  {
                 font-size:2.8rem;
-                font-weight:300;
-                color:var(--white);
+                font-weight:600;
+                color:var(--pricing-heading);
                 text-transform:uppercase;
                 text-align:right;
                 position:absolute;
@@ -192,7 +192,7 @@
                 justify-content: center;
                 align-items:center;
                 height: 100%;
-                color:var(--white);
+                color:var(--pricing-price);
             }
 
             &__price-only {
@@ -209,10 +209,10 @@
             &__link {
                 &:link,
                 &:visited {
-                    color:var(--white);
+                    color:var(--pricing-price);
                     font-size:2rem;
                     padding:1.5rem 2.5rem 1.5rem 2.5rem;
-                    border:1px solid var(--white);
+                    border:1px solid var(--pricing-price);
                     border-radius:3rem;
                     margin-top:2rem;
                     transition:all .3s;
@@ -272,6 +272,11 @@
                 &:hover &__side--front {
                     transform:rotateY(0);
                 } 
+
+                &:hover &__side--back {
+                    // transform:rotateY(-80deg);
+                    transform:translate(0);
+                } 
     
             }
 
@@ -285,7 +290,7 @@
             
                     li {
                         text-align:center;
-                        font: size 1.5rem;
+                        font-size:1rem;
                         padding:1rem;
             
                         &:not(:last-child) {

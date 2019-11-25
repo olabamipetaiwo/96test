@@ -3,11 +3,20 @@
     margin-bottom:2rem;
     height:40rem;
 
+    @include respond(tab-port) {
+        flex-basis:48%;
+    }
+
+
+    @include respond(phone) {
+        flex-basis:48%;
+    }
+
     figure {
         height:40rem;
         position:relative;
         overflow: hidden;
-        border:1px solid var(--white);
+        border:1px solid var(--category-border);
         cursor:pointer;
 
         img {
@@ -28,19 +37,20 @@
             left:50%;
             transform:translate(-50%,-50%);
             font-size:2rem;
+            text-align:center;
 
             &:link,
             &:visited { 
                 text-decoration: none;
-                color:var(--white);
-                border:1px solid var(--white);
+                color:var(--category-text);
+                border:1px solid var(--category-border);
                 padding:1rem 3rem 1rem 3rem;
                 transition:all .2s;
             }
 
             &:hover,
             &:active {
-                background-color:var(--bg);
+                background-color:var(--category-bg);
                 border:none;
                 font-weight:500;
                 border-radius:2px;
@@ -54,7 +64,7 @@
             position: absolute;
             bottom:3rem;
             left:50%;
-            color:var(--white);
+            color:var(--category-text);
             transform:translateX(-50%);
             font-size:2.5rem;
             text-align:center;

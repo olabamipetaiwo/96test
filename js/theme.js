@@ -5,7 +5,7 @@ var transform = () => {
     },1000);
 } 
 
-var currentTheme = localStorage.getItem('currentTheme');
+var currentTheme = sessionStorage.getItem('currentTheme');
 transform();
 document.documentElement.setAttribute('data-theme',currentTheme);
 

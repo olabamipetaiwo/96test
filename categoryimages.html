@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +7,34 @@
     <title>69 Views</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="images/69.png">
+     <script src="js/theme.js"></script>
     <link href="fonts/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="baguette/baguetteBox.min.css">
     <!-- <link href='http://fonts.googleapis.com/css?family=Monteserrat 300 400 700 800' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- <script src="js/theme.js"></script> -->
 </head>
     <body>
         <!-- begin of preloader -->
-            <!-- <div class="preloader">
+            <div class="preloader">
                 <div class="line_loader"></div>
                 <p>Loading</p>
             </div>
             <div class="overlay2"></div>
-            <div class="overlay"></div> -->
+            <div class="overlay"></div>
         <!-- end of preloader -->
 
+        <!-- Mode Changer -->
+          <div class="checkbox">
+            <input type="checkbox" id="switch" name="theme">
+            <label for="switch"></label>
+        </div>
+        <!-- Mode Changer -->
         <!-- main -->
         <main class="main">
             <!-- navigation bar -->
                 <nav class="main__nav">
                         <figure>
-                            <img src="images/69.png"   alt="69 Views Logo">
+                          <img src="images/69.png"  id="logo"  alt="69 Views Logo">
                         </figure>
                         <button id="button" class="hamburger">
                             <span class="burger"></span>

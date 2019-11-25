@@ -1,6 +1,6 @@
 .footer {
     height:10rem;
-    background-color:var(--black);
+    background-color: var(--footer);
     color:var(--text);
     padding-left:5rem;
     padding-right:5rem;
@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items:center;
     cursor:pointer;
+    box-shadow:0 1.5rem 4rem  rgba(15, 14, 14, 0.5);
 
 
     &__content {
