@@ -23,13 +23,14 @@
             <div class="overlay"></div>
         <!-- end of preloader -->
 
-        <!-- Mode Changer -->
-          <div class="checkbox">
-            <input type="checkbox" id="switch" name="theme">
-            <label for="switch"></label>
-        </div>
-        <!-- Mode Changer -->
-        <!-- main -->
+        <!-- <-- Scroll to top -->
+        <div class="scrollTop">
+          <a href="javascript:void(0)" id="top">
+                  <i class="footer__icon-item  fa fa-angle-double-up"></i>
+          </a>
+      </div>
+      <!-- end scroll top top -->
+            <!-- main -->
         <main class="main">
             <!-- navigation bar -->
                 <nav class="main__nav">
@@ -53,6 +54,13 @@
                                 <li><a class="navigation__link" href="lookbook.html">Loobooks</a></li>
                                 <li><a class="navigation__link" href="about.html">About Us</a></li>
                                 <li><a class="navigation__link" href="contact.html">Contact Us</a></li>
+                                <li class="mode">
+                                    <a class="navigation__link" href="#" id="mode_text">Light Mode</a>
+                                     <div class="mode__checkbox">
+                                            <input type="checkbox" id="switch" name="theme">
+                                            <label for="switch"></label>
+                                    </div>
+                                </li>
                             </ul>
                         </nav>
                     </div>

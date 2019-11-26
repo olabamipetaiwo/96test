@@ -1,20 +1,35 @@
 .scrollTop {
     width:4rem;
     height:4rem;
-    background-color:red;
+    background-color:var(--switch);
+    border-radius:50%;
     position: fixed;
     bottom:12rem;
-    left:1rem;
+    right:1rem;
     z-index:2000;
     @include flexCenter;
+    color:yellow;
+    box-shadow:var(--shadow);
 
-    .arrow {
-      
-        width:2rem;
-        height:2rem;
-        border:2px solid transparent;
-        border-top-color:yellow;
-        border-right-color:yellow;
-        transform:rotate(30deg);
+    &:hover {
+        background-color:var(--top);
+    }
+
+    &:hover a {
+        color:var(--switch);
+    }
+
+    a {
+        &:link,
+        &:visited { 
+          color:var(--top);
+          font-size:3rem;
+          font-weight:400;
+        }
+  
+        &:hover,
+        &:active{
+            color:var(--switch);
+        }
     }
 }

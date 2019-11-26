@@ -110,9 +110,9 @@
 
                         &:hover,
                         &:active{
-                             color:var(--text-2);
+                             color:var(--link-color);
                              background-position:100%;
-                          }
+                        }
                         }  
              }
   }
@@ -144,5 +144,95 @@
       }
     }
   
-  
+  .mode {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:nowrap;
+
+    .navigation__link {
+      &:link,
+      &:visited { 
+        color:var(--text);
+        text-decoration:none;
+        position:relative;
+        overflow-x:hidden;
+
+        background-image:linear-gradient(120deg,transparent 0%, transparent 50%, var(--bg-2) 50%);
+        background-size:0;
+        text-align:center;
+        transition:all .4s;
+        padding:1rem 2rem;
+      }
+
+      &:hover,
+      &:active{
+            color:var(--text);
+            background-image:linear-gradient(120deg,transparent 0%, transparent 50%, var(--bg-2) 50%);
+            background-size:0;
+         }
+      } 
+
+    &__checkbox {
+      width:5rem;
+      flex-grow:1;
+
+      @include respond(misc1) {
+        width:5.5rem;
+      }
+
+      @include respond(phone) {
+        width:6rem;
+      }
+      @include  flexCenter;
+
+      input[type=checkbox] {
+        height:0;
+        width:0;
+        visibility:hidden;
+      }
+
+      label {
+        cursor:pointer;
+        width:4.2rem;
+        height:2.1rem;
+        background:var(--switch);
+        //float:right;
+        border-radius:10rem;
+        position: relative;
+    }
+    
+    label:after  {
+        content:'';
+        position:absolute;
+        top:.3rem;
+        left:.4rem;
+        width:1.5rem;
+        height:1.5rem;
+        background-color: #fff ;
+        border-radius:5rem;
+        transition:0.3s;
+     }
+
+     input[type=checkbox]:checked + label {
+      background-color:var(--other);
+     }
+      
+      input:checked + label:after {
+          transform:translateX(100%);
+
+          @include respond(misc1) {
+            //left:0;
+          }
+
+          @include respond(phone) {
+             //left:-.4rem;
+          }
+      }
+
+
+    }
+
+    
+  }
   

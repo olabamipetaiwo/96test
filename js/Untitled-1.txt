@@ -1,45 +1,44 @@
 $(document).ready(() => {
     var checkbox = document.getElementById('switch');
+    let modeText = document.getElementById('mode_text');
     var logo = sessionStorage.getItem('logo');
-    var modeText = document.getElementById('mode_text');
-    var currentThemeDefault = sessionStorage.getItem('currentTheme');
+    var currentTheme = sessionStorage.getItem('currentTheme');
 
     if(logo) {
         document.getElementById('logo').setAttribute('src',logo);
     }
 
-    if(currentThemeDefault != null) {
-        if (currentTheme === 'light') { 
-            modeText.innerText = "Dark Mode";
-        }else {
-            modeText.innerText = "Light Mode";
-        }
-    }else {
-        modeText.innerText = "Light Mode";
-    }
+   
+    // if(currentTheme != null) {
+    //     if (currentTheme === 'light') { 
+    //         modeText.innerText = "Dark Mode";
+    //     }else {
+    //         modeText.innerText = "Light Mode";
+    //     }
+    // }else {
+    //     modeText.innerText = "Light Mode";
+    // }
 
     checkbox.addEventListener('change', () => {
-       changeTheme();
-    });
-
-    let changeTheme= () => {
-        var currentTheme = document.documentElement.getAttribute('data-theme');
-        if (currentTheme === 'light') {
+        console.log('cbv')
+        if (currentTheme == 'light') {
             trans();
-            modeText.innerText = "Light Mode";
             sessionStorage.setItem('logo','images/69.png');
+            //modeText.innerText = "Dark Mode";
             document.getElementById('logo').setAttribute('src','images/69.png');
             sessionStorage.setItem('currentTheme',"dark");
             document.documentElement.setAttribute('data-theme','dark');
         }else {
-            trans();     
-            modeText.innerText = "Dark Mode"; 
+            trans();      
             sessionStorage.setItem('logo','images/69light.png');
+           // modeText.innerText = "Light Mode";
             document.getElementById('logo').setAttribute('src','images/69light.png');
             sessionStorage.setItem('currentTheme',"light");
             document.documentElement.setAttribute('data-theme','light');
         }
-    }
+    });
+
+    
     
     let trans = () => {
         document.documentElement.classList.add('transition');
@@ -59,18 +58,6 @@ $(document).ready(() => {
             itemSelector: '.js-masonry-item'
         });
     }); 
-
-    $("#top").click(()=> {
-        // window.scrollTo(0,0);
-        // window.scrollTo({
-        //     top:0,
-        //     left:0,
-        //     behaviour:"smooth"
-        // });
-        $("html,body").animate({
-            scrollTop:0
-        },"slow");
-    });
 
     baguetteBox.run('.tz-gallery');
 

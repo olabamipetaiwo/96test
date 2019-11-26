@@ -9,7 +9,7 @@
 
 
     @include respond(phone) {
-        flex-basis:48%;
+        flex-basis:100%;
     }
 
     figure {

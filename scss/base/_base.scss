@@ -47,11 +47,13 @@ $color_grey_light_3: #333;
     --input-placeholder:#ff7730;
     --switch:#ff7730;
     --other:#ff7730;
+    --link-color:#ff7730;
 
     --overlay-1:#ff7730;
     --overlay-2:#da5711;
     --overlay-3:#a1420f;
     --line:#ff7730;
+    --top:#ffffff;
 
     --bg-2:#ff7730; 
     --text-2:#fff;
@@ -59,7 +61,7 @@ $color_grey_light_3: #333;
     --dark2:#29324d;
     --dark3:#2a3556;
     --dark4:#1b2440;
-    scroll-behaviour:smooth;
+    --shadow:0 1.5rem  4rem  rgba(15, 14, 14, 0.217);
 }
 
 
@@ -93,12 +95,14 @@ html[data-theme='dark'] {
     --overlay-2:#2a373c;
     --overlay-3:#404b50;
     --line:#ffffff;
+    --top:#ffffff;
 
 
-    --text-2:#3d51fb;
+    --text-2:#3e404b;
+    --link-color:#3d51fb;
     --bg-2:#ffffff;
     --darker-shade:#191a20;
-    scroll-behaviour:smooth;
+    --shadow:0 2.5rem  4rem  rgba(185, 168, 168, 0.319);
 }
 
 *,
