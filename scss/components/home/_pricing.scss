@@ -27,6 +27,7 @@
         display:flex;
         justify-content: space-between;
         flex-wrap:wrap;
+        margin-top:1rem;
 
 
         &__item {
@@ -275,7 +276,8 @@
 
                 &:hover &__side--back {
                     // transform:rotateY(-80deg);
-                    transform:translate(0);
+                    //transform:translate(0);
+                    transform:translateY(-10rem); 
                 } 
     
             }

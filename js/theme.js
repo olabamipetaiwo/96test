@@ -6,6 +6,9 @@ var transform = () => {
 } 
 
 var currentTheme = sessionStorage.getItem('currentTheme');
+if(currentTheme != null) {
+    console.log('not nulll');
+}
 transform();
 document.documentElement.setAttribute('data-theme',currentTheme);
 

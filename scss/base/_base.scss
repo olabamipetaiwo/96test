@@ -22,6 +22,7 @@ $color_grey_light_3: #333;
     box-sizing:border-box;
 }
 
+
 :root {  
     --masonryGutter: 3%;
 
@@ -47,12 +48,18 @@ $color_grey_light_3: #333;
     --switch:#ff7730;
     --other:#ff7730;
 
+    --overlay-1:#ff7730;
+    --overlay-2:#da5711;
+    --overlay-3:#a1420f;
+    --line:#ff7730;
+
     --bg-2:#ff7730; 
     --text-2:#fff;
     --dark1:#202f61;
     --dark2:#29324d;
     --dark3:#2a3556;
     --dark4:#1b2440;
+    scroll-behaviour:smooth;
 }
 
 
@@ -82,11 +89,16 @@ html[data-theme='dark'] {
     --switch:#3d51fb;
     --other:#3d51fb;
 
+    --overlay-1:#1e292d;
+    --overlay-2:#2a373c;
+    --overlay-3:#404b50;
+    --line:#ffffff;
+
 
     --text-2:#3d51fb;
     --bg-2:#ffffff;
     --darker-shade:#191a20;
-    --line:#ffffff;
+    scroll-behaviour:smooth;
 }
 
 *,
@@ -142,4 +154,5 @@ a {
 
 .main {
     position:relative;
+    padding-bottom:15rem;
 }
